@@ -1,0 +1,11 @@
+<!--pages/searchRes/searchRes.wxml-->
+<view class="container">
+  <view class='newsong'>
+      <view class="flex-wrp" style="flex-direction:row;" >
+        <navigator  wx:for="{{resList}}" class='lists' url='/pages/detail/detail?id={{item.id}}&name={{item.name}}&singer={{item.artists[0].name}}' bindtap='detail' data-pic='{{item.album.artist.img1v1Url}}'>
+            <image src='{{item.album.artist.img1v1Url}}'></image>
+          <view class="flex-item bc_green newLi" >{{item.artists[0].name}}--{{item.name}}</view> 
+        </navigator >
+      </view>
+    </view>
+</view>

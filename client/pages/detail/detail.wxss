@@ -1,0 +1,92 @@
+/* pages/detail/detail.wxss */
+page {
+     background: #E4E4DC; 
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.infor{
+  width: 100%;
+  height: 5rem;
+  background: white;
+  display: flex; 
+  align-items: center; 
+   padding-left: 10px; 
+  /* justify-content: center; */
+  box-sizing: border-box;
+  position: relative;
+}
+.songImg{
+  width: 20%;
+  height: 4rem;
+}
+.songImg image{
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+.infoName{
+  margin-left: 10px;
+}
+.name{
+  font-size: 1rem;
+}
+.singer{
+  font-size: 0.8rem;
+}
+.icon{
+  width: 2rem;
+  height: 2rem;
+  position: absolute;
+  right: 1rem;
+}
+.icon image{
+  width: 100%;
+  height: 100%;
+}
+.hotTitle{
+  width: 100%;
+  height: 1.5rem;
+  background: #E6EAE9;
+  color: #4F5352;
+  padding-left: 10px;
+  line-height: 1.5rem;
+  box-sizing: border-box;
+}
+.comment{
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px 10px;
+}
+
+.content{
+  padding:0 10px;
+ 
+  box-sizing: border-box;
+  border: 2px solid #C20C0C;
+  box-shadow: 4px -4px 0px #C20C0C;
+  margin-top: 20px;
+  position: relative;
+}
+
+.contentMain{
+  color: #C20C0C;
+  font-weight: bolder;
+}
+.contentHead{
+  display: flex;
+  justify-content: flex-end;
+  padding: 15px 0;
+  color: #C20C0C;
+}
+.loadMore{
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+}

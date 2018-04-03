@@ -1,0 +1,20 @@
+<!--index.wxml-->
+<view class="container">
+    <view class='section search'>
+      <input type='text'placeholder="请输入歌名、歌手名" bindconfirm="search" bindinput='searchValue' confirm-type="search"></input>
+    </view>
+    <view class='banner'>
+      <image src="{{imgSrc}}" mode='{{imgMode}}' lazy-load="true"></image>
+    </view>
+      <loading hidden='{{show}}'>加载中...</loading>  
+
+
+    <view class='newsong'>
+      <view class="flex-wrp" style="flex-direction:row;" >
+        <navigator  wx:for="{{newList}}" class='lists' url='/pages/detail/detail?id={{item.id}}&name={{item.name}}&singer={{item.artists[0].name}}' bindtap='detail' data-pic='{{item.album.picUrl}}'>
+            <image src='{{item.album.picUrl}}'></image>
+          <view class="flex-item bc_green newLi" >{{item.artists[0].name}}--{{item.name}}</view> 
+        </navigator >
+      </view>
+    </view>
+</view>

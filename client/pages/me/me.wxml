@@ -1,0 +1,10 @@
+<!--pages/me/me.wxml-->
+<view class='me'>
+  <view class='top' style="background-image: url('images/bg.jpg')">
+    <view class='logo'>
+      <image src='{{logoUrl}}'></image>
+      <text>{{username}}</text>
+      
+    </view>
+  </view>
+</view>

@@ -1,0 +1,41 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/addCgi/addCgi",
+    "pages/me/me",
+    "pages/searchRes/searchRes",
+    "pages/detail/detail"
+  ],
+  
+  "window":{
+    "backgroundColor":"#F6F6F6",
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarTitleText": "你是十一",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar":{
+    "color":"#EC8587",
+    "selectedColor":"#FFF",
+    "borderStyle":"white",
+    "backgroundColor":"#C20C0C",
+    
+    "list":[{
+      "text":"首页",
+      "pagePath":"pages/index/index",
+      "iconPath":"images/home2.png",
+      "selectedIconPath":"images/home.png"
+    },{
+      "text": "抖腿榜",
+      "pagePath": "pages/addCgi/addCgi",
+      "iconPath": "images/ranking2.png",
+      "selectedIconPath": "images/ranking.png"
+    },
+    {
+      "text": "我",
+      "pagePath": "pages/me/me",
+      "iconPath": "images/me2.png",
+      "selectedIconPath": "images/me.png"
+    }]
+  }
+}

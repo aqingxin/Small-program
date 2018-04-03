@@ -1,0 +1,36 @@
+<!--pages/detail/detail.wxml-->
+<view class="container">
+  <view class='infor'> 
+     <view class='songImg'>
+      <image src='{{pic}}'></image>
+    </view>
+    <view class='infoName'>
+      <view class='name'>{{name}}</view>
+      <view class='singer'>{{singer}}</view>
+    </view>
+    <view class='icon' bindtap='switchs'>
+      <image src='{{iconUrl}}'></image>
+    </view> 
+  <!-- <audio src='{{src}}' controls loop id="myAudio" poster="{{pic}}" name="{{name}}" author="{{singer}}"></audio> -->
+  </view> 
+  <loading hidden='{{show}}'>加载中...</loading>
+  <view class='hotTitle'>扎心评论</view>
+  <view class='comment' style="flex-direction:row;">
+    <view class='content' wx:for="{{comment}}">
+      <view class='contentMain'>{{item.content}}</view>
+      <view class='contentHead'>
+        <text>——来自网易云音乐用户 - {{item.user.nickname}}</text>
+      </view>
+    </view>
+  </view>
+  <view class='loadMore'>加载更多 > </view>
+  <view class='hotTitle'>最新评论</view>
+  <view class='comment' style="flex-direction:row;">
+    <view class='content' wx:for="{{newComment}}">
+      <view class='contentMain'>{{item.content}}</view>
+      <view class='contentHead'>
+        <text>——来自网易云音乐用户 - {{item.user.nickname}}</text>
+      </view>
+    </view>
+  </view>
+</view>
